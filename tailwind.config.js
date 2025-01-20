@@ -4,9 +4,12 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { CustomGreen } from './src/CustomGreen'
+import { HulkGreen } from './src/HulkGreen'
+import {LegoBlue} from './src/LegoBlue'
+import {LokiTheme1} from './src/LokiTheme1'
 /** @type {import('tailwindcss').Config} */
 export default {
-	darkMode: 'class',
+	darkMode: 'selector',
 	content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
 	theme: {
 		extend: {},
@@ -60,6 +63,9 @@ export default {
 				],
 				custom: [
 					CustomGreen,
+					HulkGreen,
+					LegoBlue,
+					LokiTheme1,
 				],
 			},
 		}),
